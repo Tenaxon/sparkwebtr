@@ -1,0 +1,70 @@
+/* Tailwind CSS direktifleri, LÜTFEN SİLMEYİN! */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+color-scheme: light dark;
+}
+
+/*
+
+Bu CSS dosyası, sitenizin aydınlık ve gece modunu yönetir.
+
+Özel tema renkleri burada tanımlanmıştır.
+*/
+
+/* -------------------- Aydınlık Tema (Varsayılan) -------------------- */
+.light-theme {
+  background-color: #ffffff;
+  color: #1f2937; /* Varsayılan koyu metin rengi */
+}
+.light-theme .bg-white {
+  background-color: #ffffff;
+}
+.light-theme .text-gray-600 {
+  color: #4b5563;
+}
+.light-theme .text-gray-700 {
+  color: #374151;
+}
+
+/* -------------------- Gece Teması -------------------- */
+.dark-theme {
+  background-color: #1a202c; /* Koyu arka plan rengi */
+  color: #e2e8f0; /* Açık metin rengi */
+}
+/* Gece temasındaki bileşenlerin renkleri */
+.dark-theme .bg-white,
+.dark-theme .bg-gray-50 {
+  background-color: #2d3748; /* Koyu mod için kartların ve bölümlerin arka planı */
+}
+.dark-theme .text-gray-600,
+.dark-theme .text-gray-700 {
+  color: #a0aec0; /* Koyu mod için açık metin rengi */
+}
+.dark-theme .border {
+  border-color: #4a5568;
+}
+.dark-theme [class~="bg-white/80"] {
+  background-color: rgba(45, 55, 72, 0.8);
+}
+.dark-theme .bg-gray-200 {
+background-color: #4a5568;
+color: #e2e8f0;
+}
+.dark-theme .hover:bg-gray-300:hover {
+background-color: #6a7a8d;
+}
+.dark-theme .text-black, .dark-theme .hover:text-black:hover {
+color: #e2e8f0;
+}
+.dark-theme svg path {
+fill: #1a202c;
+}
+.dark-theme .bg-gray-900 {
+background-color: #1a202c;
+}
+.dark-theme .text-gray-300 {
+color: #a0aec0;
+}
